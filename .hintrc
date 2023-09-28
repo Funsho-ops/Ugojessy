@@ -1,0 +1,23 @@
+{
+    "connector": {...},
+    "formatters": [...],
+    "parsers": [...],
+    "hints": {
+        "no-inline-styles": "error",
+        ...
+    },
+    ...
+}
+
+{
+    "connector": {...},
+    "formatters": [...],
+    "hints": {
+        "no-inline-styles": [ "warning", {
+            "requireNoStyleElement": false
+        }],
+        ...
+    },
+    ...
+}
+
