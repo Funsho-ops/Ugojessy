@@ -124,14 +124,16 @@ header {
   padding: 2em 0;
 }
 
-nav ul a {
+nav ul a, 
+footer ul a {
   font-family: "Special Elite", cursive;
   font-size: 18px;
   text-transform: capitalize;
   /* fill: var(--c1--3--); */
 }
 
-nav ul a:hover {
+nav ul a:hover, 
+footer ul a:hover {
   color: var(--c1--2--);
 }
 /* End of Navigation */
@@ -348,6 +350,40 @@ h4 {
   padding-bottom: 1em;
 }
 
+footer ul li+li {
+  padding-top: 0.5em;
+}
+
+.media-links {
+  align-items: center;
+  gap: 1em;
+}
+
+.media-links a {
+  fill: var(--c1--3--);
+}
+
+.media-links a:hover {
+  fill: var(--c1--2--);
+}
+
+.location-rights {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  padding-top: 2em;
+}
+
+.location-rights .row {
+  align-items: center;
+  gap: 0.3em;
+  font-size: 14px;
+}
+
+.location-rights p {
+  font-size: 10px;
+}
 /* End of Footer */
 
 /* Media */
@@ -373,7 +409,7 @@ h4 {
 
   .toggleMenu {
     cursor: pointer;
-    background-image: url(open.svg);
+    background-image: url(./images/menu_open_FILL0_wght400_GRAD0_opsz24.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30px;
@@ -390,7 +426,7 @@ h4 {
     position: fixed;
     top: 5%;
     right: 5%;
-    background-image: url(close.svg);
+    background-image: url(./images/close_FILL0_wght400_GRAD0_opsz24.svg);
     background-size: 25px;
   }
 
